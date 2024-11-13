@@ -139,9 +139,6 @@ const Projects = () => {
                 <div className="k2d-semibold text-3xl text-black underline hover:text-white hover:bg-black hover:no-underline hover:px-4 hover:rounded-3xl mr-10" onClick={moveToStart}>
                 Projects
                 </div>
-                <div className="k2d-semibold text-3xl text-black underline hover:text-white hover:bg-black hover:no-underline hover:px-4 hover:rounded-3xl mr-10">
-                Skill
-                </div>
             </div>
             </div>
             {/* Add padding or margin-top here */}
