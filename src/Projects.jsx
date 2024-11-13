@@ -126,7 +126,19 @@ const Projects = () => {
         </Helmet>
         <div className="w-screen h-screen flex flex-col ">
             <div className="fixed text-black flex flex-row bg-white h-[10%] justify-between w-screen items-center py-2 px-10 cursor-pointer border-b-2 border-black z-10">
-            <div className="k2d-bold text-5xl mb-1">Schierke</div>
+            <div className="flex flex-row hover:scale-105">
+                <div className="k2d-bold text-5xl mb-1" onClick={moveToStart}>Schierke</div>
+                <div className="flex flex-col z-10 ml-5 ">
+                    <div className="flex flex-row ">
+                        <div className="dot-cat-projects bg-black relative right-1 top-3"/>
+                        <div className="dot-cat-projects bg-black relative right-1 top-1"/>
+                        <div className="dot-cat-projects bg-black relative  top-1"/>
+                        <div className="dot-cat-projects bg-black relative top-3 left-1"/>
+                    </div>
+                    <div className="bg-black w-8 h-8 rounded-full relative top-2"/>
+                </div>
+            </div>
+            
             <div className="flex flex-row justify-end cursor-pointer">
                 <div
                 className="k2d-semibold text-3xl text-black underline hover:text-white hover:bg-black hover:no-underline hover:px-4 hover:rounded-3xl mr-10"
@@ -147,11 +159,11 @@ const Projects = () => {
                     <div className="text-center p-4 k2d-bold">
                         กดหัวข้อเพื่อเลื่อนไปยังผลงาน : 
                     </div>
-                    <div className="border-2 p-4 rounded-3xl border-black k2d-bold mr-5 cursor-pointer animate__animated animate__zoomIn" onClick={moveToProjectoverdive}>Project Overdive</div>
+                    <div className="border-2 p-4 rounded-3xl border-black k2d-bold mr-5 cursor-pointer animate__animated animate__zoomIn hover:bg-black hover:text-white" onClick={moveToProjectoverdive}>Project Overdive</div>
                     
-                    <div className="cursor-pointer mr-5 border-2 p-4 rounded-3xl border-black k2d-bold animate__animated animate__zoomIn" onClick={moveToBraillSense}>Braille Sense</div>
+                    <div className="cursor-pointer mr-5 border-2 p-4 rounded-3xl border-black k2d-bold animate__animated animate__zoomIn hover:bg-black hover:text-white" onClick={moveToBraillSense}>Braille Sense</div>
                     
-                    <div className="cursor-pointer mr-5 border-2 p-4 rounded-3xl border-black k2d-bold animate__animated animate__zoomIn" onClick={moveToAiditor}>Aiditor </div>
+                    <div className="cursor-pointer mr-5 border-2 p-4 rounded-3xl border-black k2d-bold animate__animated animate__zoomIn hover:bg-black hover:text-white" onClick={moveToAiditor}>Aiditor </div>
                     
                 </div>
                 <div id="Projectoverdive" className="border-b-2 border-black pb-12 animate__animated animate__zoomIn" ref={ProjectOverdive}>

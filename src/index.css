@@ -83,6 +83,22 @@ html {
     position: relative;
 }
 
+.dot-cat-middle-projects {
+    height: 18px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 10;
+}
+
+.dot-cat-projects {
+    height: 10px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 20;
+}
+
 .dot-cat {
     height: 16px;
     width: 20px;
