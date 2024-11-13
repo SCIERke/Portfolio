@@ -299,12 +299,12 @@ const Projects = () => {
                         <div className="flex flex-row">
                             <div className="w-[70%]">
                                 <div className="flex flex-row h-80 mt-4 gap-x-5 overflow-x-scroll no-scrollbar" ref={sliderBraillesense}>
-                                    <img src="/assets/Braillesense/imageslide/1.jpg" alt="slide-image-1" className="rounded-3xl"/>
-                                    <img src="/assets/Braillesense/imageslide/2.jpg" alt="slide-image-2" className="rounded-3xl"/>
-                                    <img src="/assets/Braillesense/imageslide/3.jpg" alt="slide-image-3" className="rounded-3xl"/>
-                                    <img src="/assets/Braillesense/imageslide/4.jpg" alt="slide-image-4" className="rounded-3xl"/>
-                                    <img src="/assets/Braillesense/imageslide/5.jpg" alt="slide-image-5" className="rounded-3xl"/>
-                                    <img src="/assets/Braillesense/imageslide/6.jpg" alt="slide-image-6" className="rounded-3xl"/>
+                                    <img src="/assets/BrailleSense/imageslide/1.jpg" alt="slide-image-1" className="rounded-3xl"/>
+                                    <img src="/assets/BrailleSense/imageslide/2.jpg" alt="slide-image-2" className="rounded-3xl"/>
+                                    <img src="/assets/BrailleSense/imageslide/3.jpg" alt="slide-image-3" className="rounded-3xl"/>
+                                    <img src="/assets/BrailleSense/imageslide/4.jpg" alt="slide-image-4" className="rounded-3xl"/>
+                                    <img src="/assets/BrailleSense/imageslide/5.jpg" alt="slide-image-5" className="rounded-3xl"/>
+                                    <img src="/assets/BrailleSense/imageslide/6.jpg" alt="slide-image-6" className="rounded-3xl"/>
                                 </div>
                                 <div className='w-full flex flex-row justify-center mt-5 '>
                                     <button 
