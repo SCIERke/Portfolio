@@ -7,7 +7,7 @@ interface TerminalHistoryItem {
   output?: string;
 }
 
-export default function useTerminal(onInfo?: () => void) {
+export default function useTerminal(onInfo?: () => void, onPdfCommand?: () => void) {
   const [terminalHistory, setTerminalHistory] = useState<TerminalHistoryItem[]>([]);
   const chatRef = useRef<HTMLDivElement>(null);
   
@@ -35,7 +35,6 @@ Available Commands:
 clear       Clear terminal history
 help        Show this help message
 info        Open information window
-
 `;
     } else if (value === "start") {
       const welcomeText = `=============================================
@@ -54,12 +53,15 @@ info        Open information window
     } else if (value === "info") {
       newEntry.output = "Opening info window...";
       if (onInfo) onInfo();
+    } else if (value === "pdf_reader") {
+        newEntry.output = "Opening PDF Reader...";
+        if (onPdfCommand) onPdfCommand();
     } else {
       newEntry.output = `There is no '${value}' command`;
     }
 
     setTerminalHistory(prev => [...prev, newEntry]);
-  }, [onInfo]);
+  }, [onInfo, onPdfCommand]);
 
   useEffect(() => {
     setTimeout(()=>{
